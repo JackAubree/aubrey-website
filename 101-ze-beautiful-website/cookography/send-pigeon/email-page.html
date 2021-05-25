@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Send a Carrier Pigeon via the Royal Mail</title>
+    <link rel="stylesheet" href="send-pigeon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel=FONTS HERE>
+</head>
+
+<header></header>
+
+<body>
+
+<div class="letter">
+  <div class="title"><h1>Send a carrier pigeon</h1></div>
+<form method="post" action="mailto: ricky.esposito@gmail.com" accept-charset="ISO-8859-1" onsubmit="var   originalCharset = document.charset; document.charset = 'ISO-8859-1';
+  window.onbeforeunload = function (){document.charset=originalCharset;};">
+    <h1>Your Name</h1>    <input name="realname" />
+    <h1>Your Email</h1>  <input name="email"    /> 
+    <h1>Your Message</h1>
+     <textarea cols="40" rows="10" name="Message">
+     </textarea> 
+     <br>
+     <a href="mailto: ricky.esposito@gmail.com"><input type="submit" value="Send" /></a>
+     <input type="hidden" name="recipient" value="admin@example.com" />
+     <input type="hidden" name="subject" value="Subject" />
+     <input type="hidden" name="redirect"  value="https://www.example.com/thanks.html" />
+     <input type="hidden" name="missing_fields_redirect"  value="https://www.example.com/error.html" />
+     <input type="hidden" name="required" value="realname,email,Message" />
+
+</form>
+</div>
+</body>
+
+</html>

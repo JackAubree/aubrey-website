@@ -1,0 +1,179 @@
+/* BASE STYLES */
+html {
+    margin: 0 1%;
+}
+
+body {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* GWID > HAVE YOU, THE WING? */
+.full-width {
+    margin: auto;
+    overflow: auto;
+    width: 100vw;
+}
+
+.half-width {
+    float: left;
+    width: 50%;
+}
+
+.third-width {
+    float: left;
+    width: 30%;
+}
+
+/* HEADER */
+header {
+    height: 75px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    color:#77a466;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    padding: 10px 0px 0px 5px;
+}
+
+header h1 span {
+    color: #000000;
+}
+
+/* nav same as last website */
+nav {
+    float: right;
+    padding: 10px 60px 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: #77a466;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#strange-bean .full-width {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+#strange-bean .full-width img {
+    border-bottom: 3px solid #77a466;
+    border-top: 3px solid #77a466;
+}
+
+/* ABOUT */
+
+#about .full-width {
+    padding-bottom: 20px;
+}
+
+#about h2 {
+    color: #77a466;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin: 30px 0 20px 5px;
+}
+
+#about p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 15px 20px 10px 5px;
+}
+
+/* ALL THINGS --- MENU, REVIEWS, CONTACT, YAYAYA */
+/* set full-width style first for all-things section */
+
+#all-things .full-width {
+    border-width: 100%;
+    display: block;
+}
+
+#all-things h3 {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight:bolder;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+/* BUT FIRST!!! ZE MENU */
+
+#menu {
+    border-top: 3px solid #dfdfdf;
+}
+
+#menu ul {
+    color: #77a466;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 18px;
+    list-style: none;
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+#reviews {
+    border-left: 3px solid #dfdfdf;
+    border-right: 3px solid #dfdfdf;
+    border-top: 3px solid #dfdfdf;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 0px 20px 20px 25px;
+}
+
+#contact {
+    border-top: 3px solid #dfdfdf;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 20px 20px 25px;
+}
+
+/* FOOTER */
+
+footer {
+    align-items: center;
+    border-top: 3px solid #dfdfdf;
+    display: flex;
+    height: 80px;
+    margin: 0px auto;
+    margin-bottom: -100px;
+}
+
+footer h2 {
+    align-items: center;
+    color: #000000;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    justify-content: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+footer h2 span {
+    color: #77a466;
+    font-family: 'Galada', cursive;
+    font-size: 16px;
+    text-transform: lowercase;
+}

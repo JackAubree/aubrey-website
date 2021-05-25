@@ -1,0 +1,366 @@
+
+html {
+    overflow-x: hidden;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+
+header {
+    width: 100px;
+    background: black;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+#background {
+    background-image: url("../img/cabin.jpg");
+    background-size: 1320px;
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-attachment: fixed;
+    height: 100vh;
+    min-height: 100vh;
+    min-width: 1000px;
+}
+
+.full-width {
+    margin: auto;
+    overflow: auto;
+    width: 100vw;
+    min-width: 1000px;
+}
+
+.half-width {
+    margin: auto;
+    overflow: auto;
+    width: 50vw;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #000747;
+}
+
+a:visited {
+    color: #440000;
+}
+
+/* website frame aka sidebars >> navy blue curtains as we enter captain's cabin */
+
+.curtain-left {
+    background-image: url('../img/curtain-left-overflow.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: left;
+    height: 100%;
+    width: 270px;
+    position: fixed;
+    top: 0;
+    overflow: visible;
+}
+
+.curtain-right {
+    background-image: url('../img/curtain-right-overflow.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: right;
+    height: 100%;
+    width: 270px;
+    margin-left: 1250px;
+    position: fixed;
+    top: 0;
+}
+
+/* portraits of crew on left curtain >> single column >> gold frames >> frame in photoshop */
+
+.crew-portraits {
+        margin-top: 90px;
+}
+
+.portrait {
+    height: 120px;
+    width: 180px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.portrait img {
+    width: 100px;
+    height: 130px;
+}
+
+.portrait img:hover {
+    transition: transform 0.65s;
+    transform: scale(1.5) translateY(-20%) translateX(20%);
+    overflow-x: scroll;
+    overflow: visible;
+}
+
+.name {
+    align-items: center;
+    color: #c9b500;
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    height: 40px;
+    justify-content: center;
+    width: 180px;
+}
+
+.name p {
+    margin: 0;
+}
+
+#jack-portrait {
+    margin-top: -20px;
+}
+
+/* HEADER */
+/* octopus/kraken tentacles curling around corners > make this part of
+image not css*/
+
+/* MAIN */
+/* find piratey scroll for menu */
+/* ornamental headers */
+/* superimpose on stormy seascape */
+/* full-height bar on left w portraits of the crew */
+/* Killick's Tip > faded Killick, zoom hover, popout modal window with brief, resentful paragraphs in grey
+IF there is a link. if no link, no zoom */
+
+.nav-title {
+    height: 150px;
+    width: 300px;
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    /* text-align: center; */
+    font-family: trajan-pro-3, serif;
+    font-weight: 100;
+    font-style: normal;
+    color: gold;
+    text-shadow: 3px 3px 7px black;
+}
+
+.nav-title h1 {
+    font-size: 25px;
+    margin: 30px 10px;
+    font-family: trajan-pro-3, serif;
+    font-weight: 200;
+    line-height: 30px;
+    position: absolute;
+}
+.nav-title h3 {
+    margin: 100px 210px;
+    font-family: trajan-pro-3, serif;
+    font-weight: 100;
+    line-height: 20px;
+}
+
+.rack-of-swords {
+    background-image: url('../img/wood-panel.png');
+    width: 300px;
+    height: 100%;
+    margin-left: 950px;
+    position: absolute;
+}
+
+/* sword animations */
+
+@keyframes draw-sword {
+    0% {}
+    100% {
+        transition: transform forwards;
+        transform: translateX(-90%);}
+}
+
+@keyframes draw-rapier {
+    0% {}
+    100% {
+        transition: transform forwards;
+        transform: translateX(-90%) translateY(-15%);}
+}
+
+@keyframes sword-scroll {
+    0% {}
+    100% {
+        background-image: url('../img/parchment2-scroll.png');
+        height: 50px;
+        opacity: 1;
+    }
+}
+/*  */
+
+.sword {
+    height: 100px;
+    width: 300px;
+}
+
+.blade {
+    height: 100px;
+    padding-top: 20px;
+}
+
+.blade img {
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0))
+}
+
+.blade ul {
+    height: 0;
+    width: 175px;
+    margin: -35px 0 0 77px;
+    opacity: 0;
+    list-style: none;
+    position: absolute;
+    transition: all 0.75s ease-out;
+    font-family: trajan-pro-3, serif;
+    font-weight: 200;
+    text-shadow: 1px 1px 5px rgb(107, 107, 107);
+}
+
+.blade li {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.sword:hover .blade {
+    animation: draw-sword 0.5s forwards;
+}
+
+.sword:hover ul {
+    animation: sword-scroll 0.75s forwards;
+}
+
+#rapier:hover .blade {
+    animation: draw-rapier 0.5s forwards;
+}
+
+.scabbard {
+    padding-top: 2px;
+    position: absolute;
+    filter: drop-shadow(5px 5px 3px black)
+}
+
+#cavalry-scabbard {
+    margin: -98px 0 0 61px;
+    width: 242px;
+}
+
+#gold-scabbard {
+    margin: -100px 0 0 50px;
+}
+
+#sabre-scabbard {
+    height: 200px;
+    margin: -110px 0 0 68px;
+}
+
+#rapier-scabbard {
+    margin: -107px 0 0 61px;
+}
+
+.menu {
+    background-image: url('../img/parchment3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 50px 0 30px 300px;
+    height: 700px;
+    width: 600px;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.menu h1{
+    color: #440000;
+    text-align: center;
+    margin: -8px;
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 44px;
+}
+
+.menu ul {
+    padding-left: 0;
+    transition: all .5s ease;
+}
+
+.menu li {
+    align-items: center;
+    color: #440000;
+    font-style: italic;
+    list-style: none;
+    line-height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
+.menu li:hover ul {
+    height: 100px;
+    background: #ddd;
+    transform: translateY(50%);
+}
+
+#two-weevils {
+    margin: 0 0 25px 320px;
+}
+
+.search {
+    background: black;
+    height: 50px;
+    width: 100%;
+}
+
+.search-bar {
+    margin-left: 230px;
+    width: 250px;
+    height: 50px;
+    display: inline-block;
+    float: left;
+}
+
+.search-bar input {
+    margin-top: 5px;
+}
+
+.search-filler {
+    background: orange;
+    height: 50px;
+    width: 300px;
+    display: inline-block;
+    float: left;
+}
+
+footer {
+    background: black;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+footer img {
+    margin-left: 550px;
+    height: 100px;
+}

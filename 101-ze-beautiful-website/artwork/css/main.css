@@ -1,0 +1,185 @@
+
+/****** GWID > HAVE YOU THE WING? ******/
+.full-width {
+    margin: 0 auto;
+    overflow: auto;
+    width: 1200px;
+}
+
+.half-width {
+    float: left;
+    width: 600px;
+    overflow: hidden;
+}
+
+.third-width {
+    float: left;
+    width: 400px;
+    overflow: auto;
+}
+
+.three-quarter-width {
+    width: 900px;
+    float: left;
+}
+.quarter-width {
+    width: 300px;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/******** HEADER *********/
+header {
+    background: url('../img/stage.jpg');
+    background-size: cover;
+    height: 510px;
+    min-width: 1200px;
+}
+
+header h1 {
+    color: #ff1100;
+    font-family: 'Lora', sans-serif;
+    font-size: 44px;
+    padding: 96px 0 96px 35px;
+}
+
+/* topRight nav keep it simple */
+nav {
+    float: right;
+    padding: 65px 25px;   
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #ff1100;
+    font-size: 18px;
+    padding-left: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: rgb(144, 177, 134);
+}
+
+header h2 {
+    color: #c0c0c0;
+    font-family: 'Lora', serif;
+    font-size: 22px;
+    line-height: 80px;
+    width: 1000px;
+}
+
+#exhibition {
+    background: #000000;
+}
+
+#exhibition img {
+    border: #d2d2d2 8px solid;
+}
+
+#exhibition img:hover {
+    transition: transform 0.5s;
+    transform: scale(1.2);
+    position: absolute;
+    overflow-x:scroll;
+    overflow: visible;
+}
+
+#bio {
+    background: #000000;
+    height: 400px;
+}
+
+#bio h3 {
+    padding-left: 30px;
+    padding-top: 30px;
+    color: #ff1100;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+#bio p {
+    padding: 0px 100px;
+    color: #9e9e9e;
+}
+
+#bio img {
+    transform: scale(0.85);
+    padding-top:20px;
+}
+
+#photeaux {
+    float: left;
+}
+
+#photeaux img {
+    float: right;
+    height: 350px;
+}
+
+#contact {
+    background: url('../img/rink.jpg');
+    background-size: contain;
+    padding: 50px;
+    color: #2b2b2b;
+    font-family: 'Geneva', Verdana, sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 350px;
+    position: relative;
+}
+
+#contact-info {
+    padding-top: 10px;
+}
+
+#contact a {
+    color: #ce0045;
+    text-transform: uppercase;
+    margin-left: 60px;
+    font-weight: 600;
+}
+
+#contact p {
+    font-weight: 600;
+}
+
+#contact p, #contact a {
+    padding-left: 35px;
+    line-height: 10px;
+}
+
+#contact h2 {
+    padding-left: 25px;
+    margin: 10px;
+    color: #585858;
+}
+
+#contact #or, #contact #orbetterstill {
+    margin-left: 100px;
+}
+
+#lundqvist img {
+    float: right;
+}
+
+#lundqvist img:hover {
+    transition: transform 0.5s;
+    transform: scale(1.2) translateY(-20%) translateX(-20%);
+    position: absolute;
+    overflow-x:scroll;
+}
+
+#cc-license {
+    position: absolute;
+
+}
